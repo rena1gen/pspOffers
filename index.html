@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Welcome</title>
+    <style>
+      @font-face {
+        font-family: sf-pro-display;
+        src: url("../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF")
+          format("opentype");
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(
+            195.21deg,
+            #ffffff 0%,
+            #e0fff9 29%,
+            #ccf8f1 36.5%,
+            #efeff4 64%,
+            #e9f2fe 88%,
+            #dfedff 100%
+          )
+          no-repeat center center fixed;
+        background-size: cover;
+        font-family: sf-pro-display;
+        margin: 0;
+        cursor: default;
+      }
+
+      .Welcome-titles-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+      }
+
+      .Welcome-title {
+        color: black;
+        margin: 0;
+        font-size: 34px;
+      }
+
+      .Welcome-undertitle {
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        font-size: 13px;
+        margin: 0;
+        font-weight: normal;
+      }
+
+      .navigation-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.07);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        width: 60vw;
+        margin-top: 100px;
+      }
+
+      .navigation-item {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 15px 0 15px 0;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+        transition: 0.5s ease all;
+      }
+
+      .navigation-item:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Welcome-titles-container">
+      <h1 class="Welcome-title">Добро пожаловать!</h1>
+      <h3 class="Welcome-undertitle">
+        Подключайтесь к PSP Connect прямо сейчас
+      </h3>
+    </div>
+
+    <div class="navigation-menu">
+      <a href="../Offers/offers.html" class="navigation-item">Начать</a>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      let tg = window.Telegram.WebApp;
+    </script>
+  </body>
+</html>
